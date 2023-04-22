@@ -4,7 +4,7 @@ docker stop guoshaofm-crawler
 echo "remove guoshaofm-crawler container"
 docker container rm guoshaofm-crawler
 echo "remove guoshaofm-crawler image"
-docker rmi guoshaofm-crawler
+docker rmi beegedelow/guoshaofm-crawler
 echo "pull guoshaofm-crawler image"
 docker pull beegedelow/guoshaofm-crawler
 
@@ -24,7 +24,7 @@ docker stop guoshaofm-web
 echo "remove guoshaofm-web container"
 docker container rm guoshaofm-web
 echo "remove guoshaofm-web image"
-docker rmi guoshaofm-web
+docker rmi beegedelow/guoshaofm-web
 echo "pull guoshaofm-web image"
 docker pull beegedelow/guoshaofm-web
 

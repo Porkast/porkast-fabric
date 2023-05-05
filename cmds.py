@@ -37,3 +37,13 @@ fi
 echo "run guoshaofm-web container"
 docker run --name guoshaofm-web --network host --log-opt max-size=500m --log-opt max-file=3 -v $LOGS_DIR:/app/logs -d beegedelow/guoshaofm-web
 '''
+
+check_crawler_alive_cmd = '''
+echo "start check crawler alive"
+if [ -n "$(docker ps -f "name=guoshaofm-crawler" -f "status=running" -q )" ]; then
+    echo "{host} is ok"
+else
+    echo "the container in {host} is not running!"
+fi
+
+'''

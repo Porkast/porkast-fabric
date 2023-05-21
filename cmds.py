@@ -47,3 +47,13 @@ else
 fi
 
 '''
+
+check_elasricsearch_alive_cmd = '''
+echo "start check elasticsearch alive"
+if [ -n "$(docker ps -f "name=elasticsearch" -f "status=running" -q )" ]; then
+    echo "{host} elasticsearch is ok"
+else
+    echo "the container elasticsearch in {host} is not running!"
+fi
+
+'''

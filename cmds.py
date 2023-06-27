@@ -57,3 +57,10 @@ else
 fi
 
 '''
+
+crawler_restart_cmd = '''
+echo "stop guoshaofm-crawler"
+docker stop guoshaofm-crawler
+echo "start guoshaofm-crawler"
+docker start guoshaofm-crawler
+'''

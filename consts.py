@@ -1,4 +1,4 @@
-crawler_hosts = ["8.218.181.215", "8.217.22.1", "8.217.21.24"]
+crawler_hosts = ["8.219.254.82", "8.219.61.239","8.219.175.206"]
 elasticsearch_hosts = [
     {
         "name": "elasticsearch-hk",
@@ -8,15 +8,15 @@ elasticsearch_hosts = [
 crawler_host_info_list = [
     {
         "name": "guoshao-crawler-001",
-        "host": "8.218.181.215"
+        "host": "8.219.254.82"
     },
     {
         "name": "guoshao-crawler-002",
-        "host": "8.217.22.1"
+        "host": "8.219.61.239"
     },
     {
         "name": "guoshao-crawler-003",
-        "host": "8.217.21.24"
+        "host": "8.219.175.206"
     }
 ]
 

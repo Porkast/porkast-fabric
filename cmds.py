@@ -28,7 +28,7 @@ docker rmi beegedelow/guoshaofm-web
 echo "pull guoshaofm-web image"
 docker pull beegedelow/guoshaofm-web
 
-LOGS_DIR=/home/guoshaofm-web/logs
+LOGS_DIR=$HOME/guoshaofm-web/logs
 if [[ ! -e $LOGS_DIR ]]; then
     mkdir -p $LOGS_DIR
 elif [[ ! -d $LOGS_DIR ]]; then

@@ -2,7 +2,7 @@ crawler_hosts = ["8.219.254.82", "8.219.61.239","8.219.175.206"]
 elasticsearch_hosts = [
     {
         "name": "elasticsearch-hk",
-        "host": "47.242.232.137",
+        "host": "47.243.182.236",
     }
 ]
 crawler_host_info_list = [
@@ -20,4 +20,4 @@ crawler_host_info_list = [
     }
 ]
 
-web_hosts = ["47.242.232.137"]
+web_hosts = ["47.243.182.236"]

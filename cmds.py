@@ -58,6 +58,16 @@ fi
 
 '''
 
+check_mysqldb_alive_cmd = '''
+echo "start check mysqldb alive"
+if [ -n "$(docker ps -f "name=guoshaofm-mysqldb" -f "status=running" -q )" ]; then
+    echo "{host} mysqldb is ok"
+else
+    echo "the container mysqldb in {host} is not running!"
+fi
+
+'''
+
 crawler_restart_cmd = '''
 echo "stop guoshaofm-crawler"
 docker stop guoshaofm-crawler

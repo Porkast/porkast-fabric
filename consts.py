@@ -5,6 +5,12 @@ elasticsearch_hosts = [
         "host": "47.243.182.236",
     }
 ]
+mysqldb_hosts = [
+    {
+        "name": "mysqldb-hk",
+        "host": "47.243.182.236",
+    }
+]
 crawler_host_info_list = [
     {
         "name": "guoshao-crawler-001",

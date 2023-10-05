@@ -3,8 +3,8 @@ echo "stop porkast-crawler"
 docker stop porkast-crawler
 echo "remove porkast-crawler container"
 docker container rm porkast-crawler
-echo "remove porkast-crawler image"
-docker rmi porkast-crawler
+echo "remove beegedelow/porkast-crawler image"
+docker rmi beegedelow/porkast-crawler
 echo "pull porkast-crawler image"
 docker pull beegedelow/porkast-crawler
 

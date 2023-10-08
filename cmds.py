@@ -1,4 +1,6 @@
 crawler_stop_pull_restart_cmd = '''
+echo "update porkast-crwaler"
+docker update --restart no porkast-crawler
 echo "stop porkast-crawler"
 docker stop porkast-crawler
 echo "remove porkast-crawler container"
@@ -15,7 +17,7 @@ elif [[ ! -d $LOGS_DIR ]]; then
     echo "$LOGS_DIR already exists but is not a directory" 1>&2
 fi
 echo "run porkast-crawler container"
-docker run --name porkast-crawler --network host --log-opt max-size=500m --log-opt max-file=3 -v $LOGS_DIR:/app/logs -d beegedelow/porkast-crawler
+docker run --name porkast-crawler --restart always --network host --log-opt max-size=500m --log-opt max-file=3 -v $LOGS_DIR:/app/logs -d beegedelow/porkast-crawler
 '''
 
 web_stop_pull_restart_cmd = '''
